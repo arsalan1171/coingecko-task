@@ -43,7 +43,7 @@ const CryptoDetailsPage = () => {
                             <div> Rank#{cryptoDetails?.market_cap_rank}</div>
                             <div style={{ display: 'flex' }}>
                                 <img style={{ marginRight: 10 }} src={cryptoDetails?.image.thumb} alt=''></img>
-                                <div className="crypto-title"> {cryptoDetails?.id} {cryptoDetails?.symbol}</div>
+                                <div className="crypto-title"> {cryptoDetails?.id} {cryptoDetails?.symbol.toUpperCase()}</div>
                             </div>
                             <div className='price'> R{marketData?.current_price['zar']}  </div>
                             <br></br>
@@ -76,6 +76,7 @@ const CryptoDetailsPage = () => {
                                 </div>
                             </div>
                         </div>
+                        <br></br>
                     </Col>
                     <Col>
                         <div className="right-panel">
