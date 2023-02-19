@@ -1,0 +1,22 @@
+.crypto-title {
+    font-size: 1.25rem;
+    line-height: 1.75rem;
+}
+
+.price {
+    font-size: 1.875rem;
+    line-height: 2.25rem;
+}
+
+hr {
+    border: 0;
+    border-top: 2px solid black;
+}
+
+.right-panel {
+    background-color: #424242;
+    color: white;
+    padding: 20px;
+    border-radius: 20px;
+    width: 450px;
+}
