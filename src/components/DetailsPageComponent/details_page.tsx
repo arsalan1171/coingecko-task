@@ -71,6 +71,7 @@ const CryptoDetailsPage = () => {
 
                                 <div className='description' >
                                     <label style={{ fontSize: 'larger', fontWeight: "bold" }}>What is {cryptoDetails?.name} ? </label>
+                                    <br></br>
                                     {cryptoDetails?.description['en']}
                                 </div>
                             </div>
