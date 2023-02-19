@@ -20,3 +20,11 @@ hr {
     border-radius: 20px;
     width: 450px;
 }
+
+.description {
+    margin-top: 20px;
+    background-color: #424242;
+    color: white;
+    padding: 15px;
+
+}

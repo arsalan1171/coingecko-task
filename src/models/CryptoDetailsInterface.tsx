@@ -3,6 +3,7 @@ export interface ICryptoDetails {
     name: string
     symbol: string
     market_cap_rank: number
+    description: { [key: string]: string }
     image: { [key: string]: string }
 }
 

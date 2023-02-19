@@ -12,7 +12,6 @@ const CryptoDetailsPage = () => {
     let [cryptoDetails, setCryptoDetails] = useState<ICryptoDetails>();
     let [marketData, setMarketData] = useState<IMarketData>();
 
-
     useEffect(() => {
         let isComponentMounted = true;
         const loadDetails = async () => {
@@ -49,7 +48,7 @@ const CryptoDetailsPage = () => {
                             <div className='price'> R{marketData?.current_price['zar']}  </div>
                             <br></br>
                             <div>
-                                <Container style={{ backgroundColor: '#424242', color: 'white', fontSize: 11 }}>
+                                <Container style={{ backgroundColor: '#424242', color: 'white', fontSize: 11, padding: 10 }}>
                                     <Row md={4}>
                                         <Col>Market Cap</Col>
                                         <Col>R{marketData?.market_cap['zar']}</Col>
@@ -69,6 +68,11 @@ const CryptoDetailsPage = () => {
                                         <Col>{marketData?.total_supply}  </Col>
                                     </Row>
                                 </Container>
+
+                                <div className='description' >
+                                    <label style={{ fontSize: 'larger', fontWeight: "bold" }}>What is {cryptoDetails?.name} ? </label>
+                                    {cryptoDetails?.description['en']}
+                                </div>
                             </div>
                         </div>
                     </Col>
@@ -128,7 +132,7 @@ const CryptoDetailsPage = () => {
                     </Col>
                 </Row>
             </Container>
-        </div>
+        </div >
     );
 };
 
