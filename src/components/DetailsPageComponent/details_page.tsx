@@ -20,8 +20,6 @@ const CryptoDetailsPage = () => {
             if (isComponentMounted) {
                 setCryptoDetails(getCryptoDetails);
                 setMarketData(getCryptoDetails.market_data);
-
-                console.log(cryptoDetails);
             }
         };
 
