@@ -1,4 +1,3 @@
-import React from 'react';
 import DataTable from 'react-data-table-component';
 import { Link } from 'react-router-dom';
 
@@ -63,6 +62,7 @@ export const CryptoTable = (data: any) => {
                 data={data.cryptoList}
                 highlightOnHover
                 theme='dark'
+                responsive
             />
         </div>
     );

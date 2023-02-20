@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import { useState, useEffect } from "react";
 import CryptoApi from "../../api/cryptoApi";
 import { CryptoTable } from "../TableComponent/table_component";
 import './landing_page.css';

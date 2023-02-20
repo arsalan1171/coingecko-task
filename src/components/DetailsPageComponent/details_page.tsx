@@ -1,5 +1,5 @@
 import { ICryptoDetails, IMarketData } from "../../models/CryptoDetailsInterface";
-import React, { useState, useEffect } from "react";
+import { useState, useEffect } from "react";
 import CryptoApi from "../../api/cryptoApi";
 import { Link, useLocation } from "react-router-dom";
 import Container from 'react-bootstrap/Container';
@@ -35,7 +35,6 @@ const CryptoDetailsPage = () => {
                 <Link style={{ color: "black", marginLeft: 20, marginRight: 10 }} to={"/"}  > Cryptocurrencies</Link>{">"}{'  '}
                 {cryptoDetails?.symbol.toUpperCase()} price
             </div>
-
             <Container>
                 <Row>
                     <Col>
@@ -81,7 +80,7 @@ const CryptoDetailsPage = () => {
                     <Col>
                         <div className="right-panel">
                             <div style={{ width: '400px' }}>
-                                <div style={{ marginBottom: 7 }}>{cryptoDetails?.symbol.toUpperCase()}  Price Statistics</div>
+                                <div style={{ marginBottom: 7, fontSize: 20, fontWeight: "bold" }}>{cryptoDetails?.symbol.toUpperCase()}  Price Statistics</div>
                                 <Row md={4}>
                                     <Col>{cryptoDetails?.id} Price</Col>
                                     <Col>R{marketData?.market_cap['zar']}</Col>
