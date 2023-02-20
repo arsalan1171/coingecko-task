@@ -79,7 +79,7 @@ const CryptoDetailsPage = () => {
                     </Col>
                     <Col>
                         <div className="right-panel">
-                            <div style={{ width: '400px' }}>
+                            <div style={{ width: '400px', fontSize: "small" }}>
                                 <div style={{ marginBottom: 7, fontSize: 20, fontWeight: "bold" }}>{cryptoDetails?.symbol.toUpperCase()}  Price Statistics</div>
                                 <Row md={4}>
                                     <Col>{cryptoDetails?.id} Price</Col>
