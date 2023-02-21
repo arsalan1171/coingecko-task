@@ -8,12 +8,12 @@ export interface ICryptoDetails {
 }
 
 export interface IMarketData {
-    market_cap: { [key: string]: number | undefined }
+    market_cap: { [key: string]: number }
     high_24h: { [key: string]: number }
     low_24h: { [key: string]: number }
     ath: { [key: string]: number }
     atl: { [key: string]: number }
-    total_volume: { [key: string]: number | undefined }
+    total_volume: { [key: string]: number }
     total_supply: number
     circulating_supply: number
     current_price: { [key: string]: number }
