@@ -50,7 +50,7 @@ const CryptoDetailsPage = () => {
                                 <Container style={{ backgroundColor: '#424242', color: 'white', fontSize: 11, padding: 10 }}>
                                     <Row md={4}>
                                         <Col>Market Cap</Col>
-                                        <Col>R{marketData?.market_cap['zar']}</Col>
+                                        <Col>R{marketData?.current_price['zar']}</Col>
                                         <Col>Circulating Supply</Col>
                                         <Col>{marketData?.circulating_supply}</Col>
                                     </Row>
