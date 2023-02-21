@@ -108,10 +108,8 @@ const CryptoDetailsPage = () => {
                                 <hr></hr>
                                 <Row md={4}>
                                     <Col>Vol / Market Cap</Col>
-                                    <Col>{(marketData?.total_volume['zar'] !== undefined ?
-                                        marketData?.total_volume['zar'] : 0)
-                                        / (marketData?.market_cap['zar'] !== undefined ?
-                                            marketData?.market_cap['zar'] : 0)}</Col>
+                                    <Col>{(marketData?.total_volume['zar']!) / (marketData?.market_cap['zar']!)
+                                    }</Col>
                                 </Row>
                                 <hr></hr>
                                 <Row md={4}>
