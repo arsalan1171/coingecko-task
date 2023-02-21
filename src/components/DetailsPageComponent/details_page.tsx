@@ -50,7 +50,7 @@ const CryptoDetailsPage = () => {
                                 <Container style={{ backgroundColor: '#424242', color: 'white', fontSize: 11, padding: 10 }}>
                                     <Row md={4}>
                                         <Col>Market Cap</Col>
-                                        <Col>R{marketData?.current_price['zar']}</Col>
+                                        <Col>R{marketData?.market_cap['zar']}</Col>
                                         <Col>Circulating Supply</Col>
                                         <Col>{marketData?.circulating_supply}</Col>
                                     </Row>
@@ -83,7 +83,7 @@ const CryptoDetailsPage = () => {
                                 <div style={{ marginBottom: 7, fontSize: 20, fontWeight: "bold" }}>{cryptoDetails?.symbol.toUpperCase()}  Price Statistics</div>
                                 <Row md={4}>
                                     <Col>{cryptoDetails?.id} Price</Col>
-                                    <Col>R{marketData?.market_cap['zar']}</Col>
+                                    <Col>R{marketData?.current_price['zar']}</Col>
                                 </Row>
                                 <hr></hr>
                                 <Row md={4}>
@@ -107,7 +107,7 @@ const CryptoDetailsPage = () => {
                                 </Row>
                                 <hr></hr>
                                 <Row md={4}>
-                                    <Col>Vol/Market Cap</Col>
+                                    <Col>Vol / Market Cap</Col>
                                     <Col>{(marketData?.total_volume['zar'] !== undefined ?
                                         marketData?.total_volume['zar'] : 0)
                                         / (marketData?.market_cap['zar'] !== undefined ?
@@ -125,7 +125,7 @@ const CryptoDetailsPage = () => {
                                 </Row>
                                 <hr></hr>
                                 <Row md={4}>
-                                    <Col>Trading Volume</Col>
+                                    <Col>Trading Vol.</Col>
                                     <Col>R{marketData?.total_volume['zar']}</Col>
                                 </Row>
                             </div>
