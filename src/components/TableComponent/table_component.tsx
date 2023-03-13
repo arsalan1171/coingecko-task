@@ -48,7 +48,7 @@ export const column: any = [
         name: 'Last 7 days',
         selector: (row: { image: string; }) => row.image,
         cell: (tableProps: { image: string | undefined; }) => (
-            <img src={"https://www.coingecko.com/coins/" + tableProps.image?.match(/[0-9]{1,}/) + "/sparkline"} height="50px" alt='' />
+            <img src={"https://www.coingecko.com/coins/" + tableProps.image?.match(/[0-9]{1,}/) + "/sparkline.svg"} height="50px" alt='' />
         )
     },
 ];
