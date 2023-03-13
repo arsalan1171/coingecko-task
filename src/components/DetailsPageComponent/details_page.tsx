@@ -108,7 +108,7 @@ const CryptoDetailsPage = () => {
                                 <hr></hr>
                                 <Row md={4}>
                                     <Col>Vol / Market Cap</Col>
-                                    <Col>{(marketData?.total_volume['zar']!) / (marketData?.market_cap['zar']!)
+                                    <Col>{((marketData?.total_volume['zar']!) / (marketData?.market_cap['zar']!)).toFixed(4)
                                     }</Col>
                                 </Row>
                                 <hr></hr>
