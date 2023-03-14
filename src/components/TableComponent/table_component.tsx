@@ -18,7 +18,8 @@ export const column: any = [
         name: 'Coin',
         selector: (row: { name: string; }) => row.name,
         cell: (tableProps: { id: string | undefined; }) => (
-            <Link style={{ color: "white" }} to={`/crypto-details/${tableProps.id}`} state={{ from: tableProps.id }}> {tableProps.id}</Link>
+            <Link style={{ color: "white" }} to={`/crypto-details/${tableProps.id}`} 
+            state={{ from: tableProps.id }}> {tableProps.id}</Link>
         ),
         sortable: false
     },
@@ -48,7 +49,8 @@ export const column: any = [
         name: 'Last 7 days',
         selector: (row: { image: string; }) => row.image,
         cell: (tableProps: { image: string | undefined; }) => (
-            <img src={"https://www.coingecko.com/coins/" + tableProps.image?.match(/[0-9]{1,}/) + "/sparkline.svg"} height="50px" alt='' />
+            <img src={"https://www.coingecko.com/coins/" +
+             tableProps.image?.match(/[0-9]{1,}/) + "/sparkline.svg"} height="50px" alt='' />
         )
     },
 ];
@@ -61,6 +63,7 @@ export const CryptoTable = (data: any) => {
                 columns={column}
                 data={data.cryptoList}
                 highlightOnHover
+                noDataComponent="Data loading..."
                 theme='dark'
                 responsive
             />
